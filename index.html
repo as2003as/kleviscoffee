@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klevis Coffee Bar Lounge </title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Screenshot 2024-12-01 194500.png">
+       <h2 class="titulli"> 𝓕𝓞𝓞𝓓 𝓜𝓔𝓝𝓤  </h2>
+    </header>
+   <br>
+    <h4 class="text">"𝓕𝓸𝓸𝓭 𝓲𝓼 𝓷𝓸𝓽 𝓳𝓾𝓼𝓽 𝓪 𝓷𝓮𝓬𝓮𝓼𝓼𝓲𝓽𝔂, 𝓲𝓽 𝓲𝓼 𝓪 𝓹𝓵𝓮𝓪𝓼𝓾𝓻𝓮 𝓯𝓸𝓻 𝓽𝓱𝓮 𝓼𝓸𝓾𝓵."</h4>
+
+    <button id="scrollUpBtn" title="Go to top">↑</button>
+
+    <br> <br> <br>
+   <div class="all">
+   <ul class="menu"> <h3>Mëngjesi</h3>
+    <li><span>Supë</span> <span>1.80€</span></li>
+    <li><span>Llokuma</span> <span>2.50€</span></li>
+    <li><span>Omlet me proshutë</span> <span>2.70€</span></li>
+    <li><span>Omlet ne suxhuk</span> <span>3.00€</span>  </li>
+   </ul>
+  
+   
+   <ul class="menu"> <h3>Sandwich</h3>
+    <li><span>Sandwich proshutë</span> <span>2.90€</span></li>
+    <li><span>Sandwich pule</span> <span>3.20€</span></li>
+    <li><span>Sandwich Klevis</span> <span>3.50€</span></li>
+    <br>
+    <li><span>Hamburger klasik</span> <span>2.50€</span></li>
+    <li><span>Hamburger i shtëpisë</span> <span>2.80€</span></li>
+   </ul>
+
+
+   <ul class="menu"> <h3>Pizza & Pasta</h3>
+    <li><span>Pizza margarita</span> <span>4.00€</span></li>
+    <li><span>Pizza proshutë</span> <span>5.00€</span></li>
+    <li><span>Pizza peperoni</span> <span>5.00€</span></li>
+    <li><span>Pizza Klevis</span> <span>5.00€</span></li>
+    <br>
+    <li><span>Pasta arrabbiata</span> <span>3.50€</span></li>
+    <li><span>Pasta bolognese</span> <span>4.20€</span></li>
+    <li><span>Pasta carbonara</span> <span>4.20€</span></li>
+    <li><span>Pasta pule me pesto</span> <span>4.50€</span></li>
+   </ul>
+
+
+   <ul class="menu"> <h3>Risotto</h3>
+    <li><span>Risotto me perime</span> <span>3.50€</span></li>
+    <li><span>Risotto me pule dhe perime</span> <span>4.20€</span></li>
+    <br>
+    <li><span>File pule</span> <span>4.50€</span></li>
+    <li><span>Pleskavic</span> <span>4.00€</span>  </li>
+   </ul>
+
+
+   <ul class="menu"> <h3>Sallatat</h3>
+    <li><span>Sallatë pule</span> <span>4.50€</span></li>
+    <li><span>Sallatë mediterane</span> <span>3.50€</span></li>
+    <li><span>Sallatë shope</span> <span>2.90€</span></li>
+  
+   </ul>
+
+
+   <ul class="menu"> <h3>Meze</h3>
+    <li><span>Fingers</span> <span>4.20€</span></li>
+    <li><span>Wings</span> <span>5.20€</span></li>
+    <li><span>Meze e nxehtë(2 persona)</span> <span>8.00€</span></li>
+    <li><span>Meze e nxehtë(4 persona)</span> <span>16.00€</span></li>
+    <li><span>Meze e ftohtë(2 persona)</span> <span>6.00€</span></li>
+    <li><span>Meze e ftohtë(4 persona)</span> <span>12.00€</span></li>
+  
+   </ul>
+
+   </div>
+
+
+    <style>
+        h3{
+            /* background-color: rgb(138, 168, 197); */
+            background-color: #555555;
+            color: white;
+
+        }
+
+     .all{
+        text-align: center;
+     }
+.menu{
+    list-style-type: none;
+    padding: 0;
+    
+}
+.menu li{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    
+}
+.menu span{
+    width: 100%;
+}
+
+        body{
+            background-color: #ffe4c4;
+            background: linear-gradient(135deg, #ffcb9a, #fadfac);
+
+
+        }
+        .logo{
+            width: 200px;
+            height: 200px;
+        }
+        .titulli{
+                display: flex;
+                justify-content: center;
+
+            } 
+              
+            .text{
+                text-align: center;
+                border: 2px solid black;
+            }
+            #scrollUpBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Distance from the bottom */
+  right: 30px; /* Distance from the right */
+  z-index: 99; /* Ensure it’s on top of other content */
+  font-size: 18px; /* Increase font size */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #3a3a3a; /* Button background */
+  color: white; /* Text color */
+  cursor: pointer; /* Mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#scrollUpBtn:hover {
+  background-color: #333; /* Darker background on hover */
+}
+
+
+        @media only screen and (max-width:765px)  {
+            body{
+              
+                background-color: bisque;
+          
+
+
+            }
+            .logo{
+                width: 150px;
+                height: 150px;
+            }
+            .titulli{
+                display: flex;
+                justify-content: center;
+               
+            } 
+            .text{
+               border: 2px dashed black; 
+            }
+            
+                }
+    </style>
+
+
+
+<script>
+    window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+  const scrollBtn = document.getElementById("scrollUpBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block"; // Show the button
+  } else {
+    scrollBtn.style.display = "none"; // Hide the button
+  }
+}
+
+// Smooth scroll to top when the button is clicked
+document.getElementById("scrollUpBtn").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+</script>
+
+</body>
+</html>
